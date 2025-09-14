@@ -39,6 +39,10 @@ Document repositories such as app.anshin.care, customer.anshin.care, and reserve
     -   `docs/`
         フォルダにファイルを追加すると自動的にルーティングされます。\
     -   例: `docs/intro.md`
+        - *以下のような構成にできたら嬉しい？*
+            - `docs/app` app.anshin.care のドキュメント
+            - `docs/customer` customer.anshin.care のドキュメント
+            - `docs/reserve` reserve.anshin.care のドキュメント
 -   **サイドバー設定** (`sidebars.js`)
     -   ドキュメントの並び順や階層を管理。\
     -   自動生成モードもサポート。
@@ -47,8 +51,8 @@ Document repositories such as app.anshin.care, customer.anshin.care, and reserve
 
 ## 3. ページ・カスタムコンポーネント
 
--   **固定ページ**: `src/pages/` に配置。React コンポーネントや Markdown
-    で作成可能。\
+-   **固定ページ**: `src/pages/` に配置。React コンポーネントや Markdown で作成可能。
+    - *`ads.anshin.care` を こちらに移行できる？*
 -   **MDX で拡張**: Markdown 内で React コンポーネントを埋め込み可能。
 
 ------------------------------------------------------------------------
