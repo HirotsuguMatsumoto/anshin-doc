@@ -1,11 +1,10 @@
 ---
-id: attendance-1031
 title: 承認した勤怠の取消（権限制限）
-slug: attendance-approval-cancel
 sidebar_position: 5
 last_update: 
     date: '2024-01-30'
 metadata: 
+    pageId: 'attendance-1031'
     categoryId: 'cate-104'
     guideId: 'guide-104'
 ---

@@ -1,12 +1,11 @@
 ---
-id: contract-102
 title: 電子署名
 subtitle: 「ご利用者」→「基本情報」→「契約情報」
-slug: electronic-signature
 sidebar_position: 2
 last_update: 
     date: '2024-04-22'
 metadata: 
+    pageId: 'contract-102'
     categoryId: 'cate-111'
     guideId: 'guide-111'
 ---

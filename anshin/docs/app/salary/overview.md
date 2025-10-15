@@ -1,11 +1,10 @@
 ---
-id: salary-101
 title: 概要
-slug: overview
 sidebar_position: 2
 last_update: 
     date: '2024-01-19'
 metadata: 
+    pageId: 'salary-101'
     categoryId: 'cate-108'
     guideId: 'guide-108'
 ---

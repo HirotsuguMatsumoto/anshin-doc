@@ -1,11 +1,10 @@
 ---
-id: salary-103
 title: 給与計算
-slug: calculation
 sidebar_position: 4
 last_update: 
     date: '2024-01-19'
 metadata: 
+    pageId: 'salary-103'
     categoryId: 'cate-108'
     guideId: 'guide-108'
 ---

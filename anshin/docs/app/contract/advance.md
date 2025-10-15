@@ -1,12 +1,11 @@
 ---
-id: contract-101
 title: 事前準備
 subtitle: 「事業所」→「サービス」→「電子署名書類」
-slug: advance
 sidebar_position: 1
 last_update: 
     date: '2024-04-22'
 metadata: 
+    pageId: 'contract-101'
     categoryId: 'cate-111'
     guideId: 'guide-111'
 ---

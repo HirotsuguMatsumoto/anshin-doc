@@ -1,11 +1,10 @@
 ---
-id: salary-102
 title: 初めて給与計算を行う職員の設定
-slug: config
 sidebar_position: 3
 last_update: 
     date: '2024-01-19'
 metadata: 
+    pageId: 'salary-102'
     categoryId: 'cate-108'
     guideId: 'guide-108'
 ---

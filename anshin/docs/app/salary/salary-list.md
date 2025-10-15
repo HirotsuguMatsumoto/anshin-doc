@@ -1,11 +1,10 @@
 ---
-id: salary-104
 title: 給与明細
-slug: salary-list
 sidebar_position: 5
 last_update: 
     date: '2024-01-20'
 metadata: 
+    pageId: 'salary-104'
     categoryId: 'cate-108'
     guideId: 'guide-108'
 ---

@@ -4,11 +4,10 @@ sidebar_position: 5
 last_update: 
     date: '2024-01-15'
 metadata: 
-    id: start-104
+    id: 'start-104'
     categoryId: 'cate-100'
     guideId: 'guide-100'
 ---
-
 
 1. [職員登録[権限:職員-職員管理]](#start-104-1)
 2. [雇用・部署設定[権限:職員-職員・給与管理]](#start-104-2)

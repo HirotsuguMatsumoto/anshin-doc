@@ -1,11 +1,10 @@
 ---
-id: attendance-100
 title: 勤怠管理を始める前に
-slug: before-starting
 sidebar_position: 1
 last_update: 
     date: '2024-01-19'
 metadata: 
+    pageId: 'attendance-100'
     categoryId: 'cate-104'
     guideId: 'guide-104'
 ---

@@ -1,12 +1,11 @@
 ---
-id: aggregate-105
 title: 分析結果推移
 subtitle: 「集計・分析」→「分析」→「「稼働推移」→「稼働率（労働時間/稼働時間）・利用者評価」
-slug: analysis
 sidebar_position: 5
 last_update: 
     date: '2024-01-15'
 metadata: 
+    pageId: 'aggregate-105'
     categoryId: 'cate-120'
     guideId: 'guide-120'
 ---

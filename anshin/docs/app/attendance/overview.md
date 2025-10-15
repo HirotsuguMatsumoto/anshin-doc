@@ -1,11 +1,10 @@
 ---
-id: attendance-101
 title: 概要
-slug: overview
 sidebar_position: 2
 last_update: 
     date: '2024-01-19'
 metadata: 
+    pageId: 'attendance-101'
     categoryId: 'cate-104'
     guideId: 'guide-104'
 ---

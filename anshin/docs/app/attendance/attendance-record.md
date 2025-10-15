@@ -1,11 +1,10 @@
 ---
-id: attendance-104
 title: 出勤簿管理（権限制限）
-slug: attendance-record
 sidebar_position: 6
 last_update: 
     date: '2024-01-18'
 metadata: 
+    pageId: 'attendance-104'
     categoryId: 'cate-104'
     guideId: 'guide-104'
 ---

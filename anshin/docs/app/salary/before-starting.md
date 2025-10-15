@@ -1,11 +1,10 @@
 ---
-id: salary-100
 title: 給与計算を始める前に
-slug: before-starting
 sidebar_position: 1
 last_update: 
     date: '2024-01-19'
 metadata: 
+    pageId: 'salary-100'
     categoryId: 'cate-108'
     guideId: 'guide-108'
 ---

@@ -1,11 +1,10 @@
 ---
-id: attendance-102
 title: 勤怠申請
-slug: attendance-request
 sidebar_position: 3
 last_update: 
     date: '2024-01-18'
 metadata: 
+    pageId: 'attendance-102'
     categoryId: 'cate-104'
     guideId: 'guide-104'
 ---

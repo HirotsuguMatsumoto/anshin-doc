@@ -1,11 +1,10 @@
 ---
-id: attendance-103
 title: 勤怠承認（権限制限）
-slug: attendance-approval
 sidebar_position: 4
 last_update: 
     date: '2024-01-18'
 metadata: 
+    pageId: 'attendance-103'
     categoryId: 'cate-104'
     guideId: 'guide-104'
 ---

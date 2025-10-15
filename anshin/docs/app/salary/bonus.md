@@ -1,11 +1,10 @@
 ---
-id: salary-105
 title: 賞与計算
-slug: bonus
 sidebar_position: 6
 last_update: 
     date: '2024-01-20'
 metadata: 
+    pageId: 'salary-105'
     categoryId: 'cate-108'
     guideId: 'guide-108'
 ---

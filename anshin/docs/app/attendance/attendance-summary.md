@@ -1,11 +1,10 @@
 ---
-id: attendance-105
 title: 月間稼働情報（権限制限）
-slug: attendance-summary
 sidebar_position: 7
 last_update: 
     date: '2024-01-15'
-metadata: 
+metadata:
+    pageId: 'attendance-105'
     categoryId: 'cate-104'
     guideId: 'guide-104'
 ---

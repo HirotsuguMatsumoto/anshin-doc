@@ -1,12 +1,11 @@
 ---
-id: contract-103
 title: ご利用者による電子署名書類の確認方法
 subtitle: 「ご利用者マイページ」→「ログイン」→「契約情報」
-slug: customer-electronic-signature-view
 sidebar_position: 3
 last_update: 
     date: '2024-04-22'
 metadata: 
+    pageId: 'contract-103'
     categoryId: 'cate-111'
     guideId: 'guide-111'
 ---
