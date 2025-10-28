@@ -97,6 +97,20 @@ const config: Config = {
           label: 'App',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'customerSidebar',
+          docsPluginId: 'customer',
+          position: 'left',
+          label: 'Customer',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'reserveSidebar',
+          docsPluginId: 'reserve',
+          position: 'left',
+          label: 'Reserve',
+        },
+        {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
           position: 'right',
@@ -105,44 +119,7 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
-        {
-          title: 'More',
-          items: [
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Anshin`,
     },
     prism: {
       theme: prismThemes.github,
