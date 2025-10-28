@@ -53,6 +53,7 @@ const config: Config = {
         path: 'docs/app',
         routeBasePath: 'docs/app',
         sidebarPath: './sidebars.app.ts',
+        editUrl: 'https://github.com/HirotsuguMatsumoto/anshin-doc/edit/main/anshin/'
       }
     ],
     [
@@ -62,6 +63,7 @@ const config: Config = {
         path: 'docs/customer',
         routeBasePath: 'docs/customer',
         sidebarPath: './sidebars.customer.ts',
+        editUrl: 'https://github.com/HirotsuguMatsumoto/anshin-doc/edit/main/anshin/'        
       }
     ],
     [
@@ -71,6 +73,7 @@ const config: Config = {
         path: 'docs/reserve',
         routeBasePath: 'docs/reserve',
         sidebarPath: './sidebars.reserve.ts',
+        editUrl: 'https://github.com/HirotsuguMatsumoto/anshin-doc/edit/main/anshin/'
       }
     ]
 
