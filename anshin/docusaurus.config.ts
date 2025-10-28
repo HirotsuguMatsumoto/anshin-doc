@@ -40,16 +40,43 @@ const config: Config = {
     [
       'classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          showLastUpdateTime: true,
-        },
+        docs: false,
         blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
     ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'app',
+        path: 'docs/app',
+        routeBasePath: 'docs/app',
+        sidebarPath: './sidebars.app.ts',
+      }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'customer',
+        path: 'docs/customer',
+        routeBasePath: 'docs/customer',
+        sidebarPath: './sidebars.customer.ts',
+      }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'reserve',
+        path: 'docs/reserve',
+        routeBasePath: 'docs/reserve',
+        sidebarPath: './sidebars.reserve.ts',
+      }
+    ]
+
   ],
 
   themeConfig: {
@@ -65,6 +92,7 @@ const config: Config = {
         {
           type: 'docSidebar',
           sidebarId: 'appSidebar',
+          docsPluginId: 'app',
           position: 'left',
           label: 'App',
         },
