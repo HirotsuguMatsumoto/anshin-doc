@@ -69,7 +69,17 @@ const config: Config = {
         sidebarPath: './sidebars.reserve.ts',
         editUrl: 'https://github.com/HirotsuguMatsumoto/anshin-doc/edit/main/anshin/'
       }
-    ]
+    ],
+    async function myPlugin() {
+      return {
+        name: 'docusaurus-tailwindcss',
+        configurePostCss(postcssOptions) {
+          postcssOptions.plugins.push(require('tailwindcss'));
+          postcssOptions.plugins.push(require('autoprefixer'));
+          return postcssOptions;
+        },
+      };
+    }
 
   ],
 
