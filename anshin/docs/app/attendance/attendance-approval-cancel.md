@@ -1,6 +1,8 @@
 ---
 title: 承認した勤怠の取消（権限制限）
 sidebar_position: 5
+description: "承認済みの勤怠申請を取り消す手順と注意点を解説します。60日未満の勤怠のみ取消可能です。"
+keywords: ["勤怠取消", "承認取消", "勤怠管理", "事業所職員", "アンシン"]
 last_update: 
     date: '2024-01-30'
 metadata: 

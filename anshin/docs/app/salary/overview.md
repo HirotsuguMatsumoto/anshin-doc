@@ -1,6 +1,8 @@
 ---
 title: 概要
 sidebar_position: 2
+description: "アンシンの給与計算機能の概要と提供される帳票（給与台帳・賞与台帳等）について紹介します。"
+keywords: ["給与計算", "概要", "給与台帳", "賞与台帳", "アンシン"]
 last_update: 
     date: '2024-01-19'
 metadata: 

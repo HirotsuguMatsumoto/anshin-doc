@@ -1,6 +1,8 @@
 ---
 title: ３、事業所設定（権限制限）
 sidebar_position: 6
+description: "事業所（支店）の登録手順と所属職員の設定方法、権限制限に関する注意点を説明します。"
+keywords: ["事業所設定", "支店登録", "職員登録", "権限", "アンシン"]
 last_update: 
     date: '2024-01-15'
 metadata: 

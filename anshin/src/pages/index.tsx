@@ -4,7 +4,10 @@ import Link from '@docusaurus/Link';
 
 export default function Home(): ReactNode {
   return (
-    <Layout>
+    <Layout
+      title="Anshin Docs"
+      description="Anshin公式ドキュメントのホームページ。アプリ、カスタマー、予約関連のセクションへアクセスできます。"
+    >
       <header className="bg-gray-100 dark:bg-gray-900">
         <div className="mx-auto max-w-6xl px-6 min-h-[calc(100vh-var(--ifm-navbar-height))] flex items-center">
           <div className="w-full text-center">

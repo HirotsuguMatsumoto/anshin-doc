@@ -1,6 +1,8 @@
 ---
 title: トップメニュー
 sidebar_position: 1
+description: "トップメニューの各機能（ショートカット、ダークモード、通知、アカウントなど）の使い方をまとめています。"
+keywords: ["トップメニュー", "ショートカット", "ダークモード", "通知", "アンシン"]
 last_update: 
     date: '2024-01-15'
 metadata: 

@@ -1,6 +1,8 @@
 ---
 title: 概要
 sidebar_position: 2
+description: "アンシンの勤怠管理機能の全体像と各画面の役割をまとめています。"
+keywords: ["勤怠管理", "概要", "画面説明", "アンシン"]
 last_update: 
     date: '2024-01-19'
 metadata: 
