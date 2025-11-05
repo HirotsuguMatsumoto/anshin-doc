@@ -75,6 +75,16 @@ const config: Config = {
         editUrl: 'https://github.com/HirotsuguMatsumoto/anshin-doc/edit/main/anshin/'
       }
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'updates',
+        path: 'docs/updates',
+        routeBasePath: 'docs/updates',
+        sidebarPath: './sidebars.updates.ts',
+        breadcrumbs: false,
+      }
+    ],
     async function myPlugin() {
       return {
         name: 'docusaurus-tailwindcss',
@@ -118,6 +128,13 @@ const config: Config = {
           docsPluginId: 'reserve',
           position: 'left',
           label: 'Reserve',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'updatesSidebar',
+          docsPluginId: 'updates',
+          position: 'right',
+          label: '更新履歴',
         },
       ],
     },
