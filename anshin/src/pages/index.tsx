@@ -9,7 +9,7 @@ export default function Home(): ReactNode {
       description="Anshin公式ドキュメントのホームページ。アプリ、カスタマー、予約関連のセクションへアクセスできます。"
     >
       <header className="bg-gray-100 dark:bg-gray-900">
-        <div className="mx-auto max-w-6xl px-6 min-h-[calc(100vh-var(--ifm-navbar-height))] flex items-center">
+        <div className="mx-auto max-w-6xl px-6 min-h-[calc(100vh-var(--ifm-navbar-height)-92px)] flex items-center py-6">
           <div className="w-full text-center">
             <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
               ようこそ — Anshin Docs
