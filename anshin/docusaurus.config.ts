@@ -85,6 +85,12 @@ const config: Config = {
         breadcrumbs: false,
       }
     ],
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-VXQ0SNY3X5',
+      },
+    ],
     async function myPlugin() {
       return {
         name: 'docusaurus-tailwindcss',
