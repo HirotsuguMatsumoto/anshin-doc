@@ -121,7 +121,7 @@ const config: Config = {
       title: 'Anshin Docs',
       logo: {
         alt: 'Logo',
-        src: 'img/logo.png',
+        src: 'img/logo.webp',
       },
       items: [
         {
