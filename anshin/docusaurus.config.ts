@@ -1,4 +1,5 @@
 import {themes as prismThemes} from 'prism-react-renderer';
+import generateAdminIndex from './plugins/generateAdminIndex';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -42,6 +43,7 @@ const config: Config = {
     ],
   ],
   plugins: [
+    generateAdminIndex,
     [
       '@docusaurus/plugin-content-docs',
       {
