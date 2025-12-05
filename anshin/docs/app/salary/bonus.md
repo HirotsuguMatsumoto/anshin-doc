@@ -1,15 +1,22 @@
 ---
+id: bonus
+slug: bonus
 title: 賞与計算
+subtitle: null
+description: 賞与計算の手順、保険控除や税金の確認方法、編集手順および年末調整に関する注意点を解説します。
+keywords:
+  - 賞与計算
+  - 賞与
+  - 保険控除
+  - 所得税
+  - アンシン
+noindex: false
 sidebar_position: 6
-description: "賞与計算の手順、保険控除や税金の確認方法、編集手順および年末調整に関する注意点を解説します。"
-keywords: ["賞与計算", "賞与", "保険控除", "所得税", "アンシン"]
-last_update: 
-    date: '2024-01-20'
-metadata: 
-    pageId: 'salary-105'
-    categoryId: 'cate-108'
-    guideId: 'guide-108'
 ---
+
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 
 1. [賞与計算](#salary-105-1)
 2. [保険控除・税金・年末調整](#salary-105-2)

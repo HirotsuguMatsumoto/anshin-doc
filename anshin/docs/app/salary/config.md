@@ -1,15 +1,21 @@
 ---
+id: config
+slug: config
 title: 初めて給与計算を行う職員の設定
+subtitle: null
+description: 給与計算を行う職員の初期設定手順（給与・雇用設定、基本給与額の登録）を説明します。
+keywords:
+  - 給与設定
+  - 基本給与額
+  - 職員設定
+  - 初期設定
+  - アンシン
+noindex: false
 sidebar_position: 3
-description: "給与計算を行う職員の初期設定手順（給与・雇用設定、基本給与額の登録）を説明します。"
-keywords: ["給与設定", "基本給与額", "職員設定", "初期設定", "アンシン"]
-last_update: 
-    date: '2024-01-19'
-metadata: 
-    pageId: 'salary-102'
-    categoryId: 'cate-108'
-    guideId: 'guide-108'
 ---
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 
 1. [給与・雇用設定](#salary-102-1)
 2. [基本給与額](#salary-102-2)

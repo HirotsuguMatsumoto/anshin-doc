@@ -1,15 +1,22 @@
 ---
+id: top-menu
+slug: top-menu
 title: トップメニュー
+subtitle: null
+description: トップメニューの各機能（ショートカット、ダークモード、通知、アカウントなど）の使い方をまとめています。
+keywords:
+  - トップメニュー
+  - ショートカット
+  - ダークモード
+  - 通知
+  - アンシン
+noindex: false
 sidebar_position: 1
-description: "トップメニューの各機能（ショートカット、ダークモード、通知、アカウントなど）の使い方をまとめています。"
-keywords: ["トップメニュー", "ショートカット", "ダークモード", "通知", "アンシン"]
-last_update: 
-    date: '2024-01-15'
-metadata: 
-    pageId: 'public-100'
-    categoryId: 'cate-101'
-    guideId: 'guide-101'
 ---
+
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 
 1. [概要](#public-100-1)
 2. [ショットカットメニュー](#public-100-2)

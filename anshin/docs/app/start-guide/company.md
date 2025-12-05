@@ -1,15 +1,22 @@
 ---
+id: company
+slug: company
 title: １、会社設定（権限制限）
+subtitle: null
+description: 会社設定の初期手順（利用機能の無効化、基本情報、雇用条件、給与設定）と運用上の注意点を解説します。
+keywords:
+  - 会社設定
+  - 雇用条件
+  - 給与設定
+  - 利用プラン
+  - アンシン
+noindex: false
 sidebar_position: 4
-description: "会社設定の初期手順（利用機能の無効化、基本情報、雇用条件、給与設定）と運用上の注意点を解説します。"
-keywords: ["会社設定", "雇用条件", "給与設定", "利用プラン", "アンシン"]
-last_update: 
-    date: '2024-01-15'
-metadata: 
-    id: 'start-103'
-    categoryId: 'cate-100'
-    guideId: 'guide-100'
 ---
+
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 
 #### 目次
 1. [利用しない機能の無効化[権限:職員-会社管理]](#start-103-1)

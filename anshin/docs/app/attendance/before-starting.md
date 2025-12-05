@@ -1,15 +1,22 @@
 ---
+id: before-starting
+slug: before-starting
 title: 勤怠管理を始める前に
+subtitle: null
+description: 勤怠管理機能の有効化と雇用条件の登録手順を解説します。導入前の準備ガイドです。
+keywords:
+  - 勤怠管理
+  - 導入手順
+  - 雇用条件
+  - 準備
+  - アンシン
+noindex: false
 sidebar_position: 1
-description: "勤怠管理機能の有効化と雇用条件の登録手順を解説します。導入前の準備ガイドです。"
-keywords: ["勤怠管理", "導入手順", "雇用条件", "準備", "アンシン"]
-last_update: 
-    date: '2024-01-19'
-metadata: 
-    pageId: 'attendance-100'
-    categoryId: 'cate-104'
-    guideId: 'guide-104'
 ---
+
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 
 1. [勤怠管理機能の有効化](#attendance-100-1)
 2. [雇用条件の登録](#attendance-100-2)

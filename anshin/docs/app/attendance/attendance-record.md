@@ -1,16 +1,22 @@
 ---
+id: attendance-record
+slug: attendance-record
 title: 出勤簿管理（権限制限）
+subtitle: null
+description: 出勤簿の管理方法や月間勤務表の修正手順、必要な権限について解説します。
+keywords:
+  - 出勤簿
+  - 勤務表 
+  - 勤怠管理 
+  - 職員管理 
+  - アンシン
+noindex: false
 sidebar_position: 6
-description: "出勤簿の管理方法や月間勤務表の修正手順、必要な権限について解説します。"
-keywords: ["出勤簿", "勤務表", "勤怠管理", "職員管理", "アンシン"]
-last_update: 
-    date: '2024-01-18'
-metadata: 
-    pageId: 'attendance-104'
-    categoryId: 'cate-104'
-    guideId: 'guide-104'
 ---
 
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 1. [概要](#attendance-104-1)
 2. [月間勤務表（権限: 事業所職員-職員管理）](#attendance-104-2)
 3. [月間勤務表修正（権限: 事業所職員-職員管理）](#attendance-104-3)
