@@ -44,9 +44,9 @@ function buildCollections(appDocsDir: string): CollectionConfig[] {
       : `app_${relPath.replace(/[^a-zA-Z0-9/]/g, '_').replace(/\//g, '_')}`; // sanitize & flatten
     const label = isRoot ? 'app' : `app/${relPath}`;
     // IMPORTANT: Decap CMS expects paths relative to the REPO ROOT, not siteDir.
-    // Our repo layout nests the Docusaurus site under `doc/anshin`, so collections
-    // must point to `doc/anshin/docs/app` instead of `docs/app`.
-    const repoRelativeDocsApp = 'doc/anshin/docs/app';
+    // Our repo layout has the Docusaurus site under `anshin`, with repo root named `doc`.
+    // Therefore collections must point to `anshin/docs/app` instead of `docs/app`.
+    const repoRelativeDocsApp = 'anshin/docs/app';
     const folder = isRoot ? repoRelativeDocsApp : `${repoRelativeDocsApp}/${relPath}`;
     return {
       name,
