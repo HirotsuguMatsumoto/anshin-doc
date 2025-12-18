@@ -1,20 +1,25 @@
 ---
+id: customer-electronic-signature-view
+slug: customer-electronic-signature-view
 title: ご利用者による電子署名書類の確認方法
 subtitle: 「ご利用者マイページ」→「ログイン」→「契約情報」
+description: ご利用者がマイページから署名済みの電子書類を確認・ダウンロードする手順を説明します。アカウント確認とログイン手順を含むガイドです。
+keywords:
+  - 電子署名確認
+  - ご利用者マイページ
+  - PDFダウンロード
+  - 契約情報
+  - アンシン
+noindex: false
 sidebar_position: 3
-description: "ご利用者がマイページから署名済みの電子書類を確認・ダウンロードする手順を説明します。アカウント確認とログイン手順を含むガイドです。"
-keywords: ["電子署名確認", "ご利用者マイページ", "PDFダウンロード", "契約情報", "アンシン"]
-last_update: 
-    date: '2024-04-22'
-metadata: 
-    pageId: 'contract-103'
-    categoryId: 'cate-111'
-    guideId: 'guide-111'
 ---
 
+<!--@ ここから下は自動生成領域です。編集しないでください -->
 import Subtitle from '@site/src/components/Subtitle';
 
 <Subtitle text={frontMatter.subtitle} />
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 
 1. [ご利用者のアカウントを登録](#contract-103-1)
 2. [ご利用者マイページへログイン](#contract-103-2)

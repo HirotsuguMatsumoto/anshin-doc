@@ -1,16 +1,22 @@
 ---
+id: before-starting
+slug: before-starting
 title: 給与計算を始める前に
+subtitle: null
+description: 給与計算を始める前の準備（機能有効化、雇用条件の登録、全体の流れ）を説明します。導入前チェックリストとして利用できます。
+keywords:
+  - 給与計算
+  - 導入準備
+  - 雇用条件
+  - 機能有効化
+  - アンシン
+noindex: false
 sidebar_position: 1
-description: "給与計算を始める前の準備（機能有効化、雇用条件の登録、全体の流れ）を説明します。導入前チェックリストとして利用できます。"
-keywords: ["給与計算", "導入準備", "雇用条件", "機能有効化", "アンシン"]
-last_update: 
-    date: '2024-01-19'
-metadata: 
-    pageId: 'salary-100'
-    categoryId: 'cate-108'
-    guideId: 'guide-108'
 ---
 
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 1. [給与計算について](#salary-100-1)
 2. [給与計算機能の有効化](#salary-100-2)
 3. [給与設定の登録](#salary-100-3)

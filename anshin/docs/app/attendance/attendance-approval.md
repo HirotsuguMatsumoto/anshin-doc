@@ -1,15 +1,21 @@
 ---
+id: attendance-approval
+slug: attendance-approval
 title: 勤怠承認（権限制限）
+subtitle: null
+description: 勤怠申請の承認・非承認の流れと、管理者による操作方法を詳しく説明します。
+keywords:
+  - 勤怠承認
+  - 勤怠申請
+  - 非承認
+  - 勤怠管理
+  - アンシン
+noindex: false
 sidebar_position: 4
-description: "勤怠申請の承認・非承認の流れと、管理者による操作方法を詳しく説明します。"
-keywords: ["勤怠承認", "勤怠申請", "非承認", "勤怠管理", "アンシン"]
-last_update: 
-    date: '2024-01-18'
-metadata: 
-    pageId: 'attendance-103'
-    categoryId: 'cate-104'
-    guideId: 'guide-104'
 ---
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 
 1. [概要](#attendance-103-1)
 2. [承認（権限: 事業所職員-職員管理）](#attendance-103-2)

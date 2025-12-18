@@ -1,15 +1,22 @@
 ---
+id: calculation
+slug: calculation
 title: 給与計算
+subtitle: null
+description: 勤怠登録から給与計算、保険・税金の調整までの一連の流れと、自動計算／手動編集の使い分けを解説します。
+keywords:
+  - 給与計算
+  - 勤怠登録
+  - 保険控除
+  - 税金
+  - アンシン
+noindex: false
 sidebar_position: 4
-description: "勤怠登録から給与計算、保険・税金の調整までの一連の流れと、自動計算／手動編集の使い分けを解説します。"
-keywords: ["給与計算", "勤怠登録", "保険控除", "税金", "アンシン"]
-last_update: 
-    date: '2024-01-19'
-metadata: 
-    pageId: 'salary-103'
-    categoryId: 'cate-108'
-    guideId: 'guide-108'
 ---
+
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 
 1. [概要](#salary-103-1)
 2. [勤怠登録](#salary-103-2)

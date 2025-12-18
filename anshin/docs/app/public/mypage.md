@@ -1,16 +1,22 @@
 ---
+id: mypage
+slug: mypage
 title: マイページ
+subtitle: null
+description: マイページで確認できる基本情報、給与、勤務表、雇用情報の見方と操作方法を説明します。
+keywords:
+  - マイページ
+  - 給与
+  - 勤務表
+  - 雇用情報
+  - アンシン
+noindex: false
 sidebar_position: 3
-description: "マイページで確認できる基本情報、給与、勤務表、雇用情報の見方と操作方法を説明します。"
-keywords: ["マイページ", "給与", "勤務表", "雇用情報", "アンシン"]
-last_update: 
-    date: '2024-01-16'
-metadata: 
-    pageId: 'public-102'
-    categoryId: 'cate-101'
-    guideId: 'guide-101'
 ---
 
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+<!--# この行より上は自動生成されます。編集しないでください -->
 1. [基本情報](#public-102-1)
 2. [給与](#public-102-2)
 3. [勤務表](#public-102-3)
@@ -47,3 +53,4 @@ metadata:
 「雇用情報」では、有給残数、代休残数の他に、雇用条件や今年度と翌年度の勤務日数を確認できます。
 
 ![雇用情報](/img/guide/public-102-5.png)
+

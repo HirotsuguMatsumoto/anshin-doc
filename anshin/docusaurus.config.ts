@@ -1,4 +1,6 @@
 import {themes as prismThemes} from 'prism-react-renderer';
+import generateAdminIndex from './plugins/generateAdminIndex';
+import netlifyCmsConfigPlugin from './plugins/netlifyCmsConfig';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
@@ -42,6 +44,8 @@ const config: Config = {
     ],
   ],
   plugins: [
+    generateAdminIndex,
+    ...(process.env.DOCUSAURUS_ENV === 'stg' ? [netlifyCmsConfigPlugin] : []),
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -157,6 +161,12 @@ const config: Config = {
           docsPluginId: 'updates',
           position: 'right',
           label: '更新履歴',
+        },
+        {
+          href: 'https://app.anshin.care',
+          label: 'アンシンアプリ',
+          position: 'right',
+          className: 'navbar-app-link',
         },
       ],
     },

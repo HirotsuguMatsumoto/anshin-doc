@@ -1,41 +1,128 @@
-# Website
+# 開発者・メンテナンスガイド
+## 1. プロジェクトのセットアップ
+1.  **Docusaurus CLI のインストール**
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+    ``` bash
+    cd anshin
+    git clone git@github.com:HirotsuguMatsumoto/anshin-doc.git doc 
+    cat .node-version
+    npm install
+    ```
 
-## Installation
+    -   `classic` テンプレート で install している。`classic` には、Docs・Blog・Pages
+        機能が含まれています。
 
-```bash
-yarn
-```
+2.  **開発サーバーの起動**
 
-## Local Development
+    ``` bash
+    npm run start
+    ```
 
-```bash
-yarn start
-```
+    -   ホットリロード付きでプレビューが可能。
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+---
 
-## Build
+## 2. コンテンツの追加・編集
+### a. ローカル開発
 
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
+**新しいドキュメントの追加**  
+新しいドキュメントを作成するには、以下のコマンドを実行してください。
 
 ```bash
-GIT_USER=<Your GitHub username> yarn deploy
+npm run new-doc <path/to/file.md> "Document Title" "<optional> Document Subtitle"
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+構造の整合性を維持・保証するための専用スクリプトが用意されていますので、ドキュメントを一から手動で作成することは避けてください。
+
+<!-- copilot-focus-start -->
+**ドキュメントの作成・編集について**
+
+ドキュメントを作成・編集する際は、YAMLフロントマターの直後に以下のコメント行が表示されていることを確認してください。  
+これらのコメント行は他のスクリプトが依存しているため、編集や削除はしないでください。
+
+```html
+---
+YAML frontmatter
+---
+<!--@ ここから下は自動生成領域です。編集しないでください -->
+
+
+<!--# この行より上は自動生成されます。編集しないでください -->
+```
+
+**コミット前の確認事項**
+
+YAMLフロントマター内の以下の項目が正しく設定されていることを必ず確認してください。
+
+```slug```: ドキュメントのURLパスです。デフォルトでは```id```と同じ値になります。
+```subtitle```: （任意）値が```null```、空欄、または任意の文字列で設定できます。
+```description```: ドキュメントの説明文です。SEO対策として使用されるほか、カード表示時の説明文としても利用されます。ユーザーがドキュメントの目的を理解できるよう、分かりやすい説明文を記載してください。
+```keywords```: ドキュメントの検索用キーワードです。SEO対策として使用されます。内容を的確に表すキーワードを記載してください。
+```noindex```: ページがSEOでインデックスされるかどうかを指定します。デフォルトでは```true```（未完成やプレビュー用ページはインデックスされません）。公開準備ができたら```false```に変更してください。
+```sidebar_position```: ドキュメントがサイドバーに表示される位置を指定します。値が小さいほどサイドバーの上部に表示されます。新規ドキュメント作成時は未設定の場合があります。詳細は下記を参照してください。
+
+上記の項目を確認したら、次のコマンドを実行してください。
+
+```bash
+npm run new-doc <path/to/file.md>
+```
+
+このコマンドは、`noindex` や `subtitle` の値に基づいて、コンポーネントのインポートや Head メタタグを自動的に挿入します。
+
+新しいドキュメントを作成する場合、`sidebar_position` は自動的に計算され、フロントマターに挿入されます。デフォルトでは新規ドキュメントはサイドバーの一番下に追加されます。
+
+サイドバー内のドキュメントの並び順を変更したい場合は、別途作業として行うのが最適です。1つのドキュメントを作成・編集する際に、他のドキュメントの `sidebar_position` を変更しないでください。
+<!-- copilot-focus-end -->
+
+<!-- copilot-ignore-start : This is a note for browser editing only. -->
+### b. Decap CMSの利用
+Decap CMS（ブラウザ上で動作するMarkdownエディタ）を使って、ドキュメントの追加や編集が可能です。
+
+**手順:**
+1. ステージングサイトの `https://stg-docs.anshin.care/admin` パスからDecap CMSにアクセスします。  
+   **注意:** `/admin` パスは本番環境では利用できません。
+2. Githubにログインします。
+3. OAuthアプリの認証を行います。
+
+Gitアクションにより、上記で説明したのと同じYAMLフロントマターのバリデーションやインポート／コンポーネントの自動挿入が実行されます。
+<!-- copilot-ignore-end -->
+
+## 3. デプロイ
+このドキュメントサイトのホスティングプロバイダーはVercelです。ブランチへのpushやマージによって自動的にデプロイがトリガーされます。
+
+リポジトリへpushする前にビルドエラーを確認するには、以下のコマンドを実行してください。
+
+```bash
+npm run build
+npm run serve
+```
+
+以前のビルドをクリアするには、以下のコマンドを実行してください。
+
+```bash
+npm run clear
+```
+
+<!-- copilot-focus-start -->
+## 4. コントリビューションガイドライン
+
+**コーディング規約**  
+ドキュメント内で```# Heading 1```の使用は避けてください。Docusaurusでは、フロントマターの```title```が自動的に```# Heading 1```としてレンダリングされます。追加で```# Heading 1```があると、```title```が表示されず、ページのフォーマットが崩れる場合があります。代わりに```## Heading 2```を使用してください。
+
+**スタイル**  
+Docusaurusは、Infimaデザインシステムに基づいた組み込みスタイルでMarkdownをレンダリングします。  
+見出し、リスト、コードブロック、テーブル、画像など、標準のMarkdown構文が利用できます。  
+高度なフォーマットが必要な場合は、InfimaのユーティリティクラスやMDXファイル内のカスタムコンポーネントを使用できます。
+
+利用可能なスタイルやサンプルの詳細については、スタイルガイドを参照してください。
+
+**Gitフロー**  
+本プロジェクトは、開発・ステージング・ホットフィックス・ドキュメント更新を管理するために、Gitflowベースのブランチモデルを採用しています。
+
+Decap CMSや自動化がどのようにワークフローに統合されているかなど、ブランチ戦略の詳細については、Gitflowドキュメントを参照してください。
+
+<!-- copilot-focus-end -->
+
+## 参考文献・リソース
+- [Docusaurus Docs](https://docusaurus.io/)
+- [Decap CMS Docs](https://decapcms.org/)
