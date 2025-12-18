@@ -162,6 +162,12 @@ const config: Config = {
           position: 'right',
           label: '更新履歴',
         },
+        {
+          href: 'https://app.anshin.care',
+          label: 'アンシンアプリ',
+          position: 'right',
+          className: 'navbar-app-link',
+        },
       ],
     },
     footer: {
