@@ -1,55 +1,13 @@
-# Gitflowと自動化の概要
+# Git統合とリリース
 
-このドキュメントは、Anshinドキュメントプロジェクトで使用されているブランチ戦略と自動化について説明します。
+共通規程はcanonical doc_id `anshin.governance.ai-driven-development`、release契約は`anshin.release.contract`を参照する。本repositoryで別のrelease規定を定義しない。
 
----
+作業はworktreeで分離し、複数の要望・変更・バグを同じworktreeで管理できる。リモートmainが絶対の正本であり、先行リリースを必ず優先する。編集前、review前と統合直前にfetch・rebaseし、必要なrepository-local検査の後に非強制pushする。
 
-## ブランチ
+```bash
+git fetch origin main
+git rebase origin/main
+git push origin HEAD:main
+```
 
-- **main**:  
-  本番用のブランチ。すべてのリリースはここからタグ付けされます。
-
-- **stg**:  
-  ステージング/統合用のブランチ。新しい機能、ドキュメント、CMS編集はリリース前にここにマージされます。
-
-- **feature**:  
-  新機能や大きな変更のために`stg`から作成されるブランチ。完了後に`stg`へマージします。
-
-- **hotfix**:  
-  本番の緊急バグ修正のために`main`から作成されるブランチ。`main`にマージ後、`stg`にもマージしてステージングを本番と同期させます。
-
-- **cms/**:  
-  Decap CMSでドキュメントが追加・編集されると、`stg`から`cms/`で始まる名前の新しいブランチが作成されます（例：`cms/<collection-name>/<filename>`）。  
-  これらのブランチでは、GitHub Actionsのワークフローが自動的にスクリプトを実行し、マージ前にMarkdownファイルのクリーンアップ、検証、インポート/コンポーネントの挿入を行います。
-
----
-
-## 典型的なワークフロー
-
-1. **機能開発:**  
-   - `stg`から`feature`ブランチを作成。
-   - 開発・テスト。
-   - 完了後に`stg`へマージ。
-
-2. **ドキュメント/CMS編集:**  
-   - Decap CMSやコントリビューターが`stg`から`cms/`ブランチを作成。
-   - ドキュメントを編集・追加。
-   - GitHub Actionsが検証・フォーマット用スクリプトを実行。
-   - レビュー後に`stg`へマージ。
-
-3. **ホットフィックス:**  
-   - 緊急修正のために`main`から`hotfix`ブランチを作成。
-   - `main`にマージ後、`stg`にもマージしてステージングを最新化。
-
-4. **リリース:**  
-   - `stg`が安定したら`main`へマージしてリリース。
-   - その後、`main`を`stg`へマージして本番の変更（ホットフィックス含む）をステージングに反映。
-
----
-
-## 自動化
-
-- **GitHubワークフロー:**  
-  プルリクエスト、マージ、プッシュ時にスクリプトを呼び出し、すべてのドキュメントファイルがプロジェクト基準を満たすようにします。
-- **Decap CMS連携:**  
-  Decap CMS経由の編集はブランチ作成と自動スクリプト実行をトリガーし、編集プロセスを効率化し一貫性を保ちます。
+mainが進んだ場合は後続側で取り込む。stg branch経由の統合、統合receipt、固定deployment plan又はacceptance記録を通常releaseの必須条件にしない。CMS固有の編集branchと文書生成処理はrelease許可条件へ転用せず、公開する実source/artifactと既存hostingの結果を確認する。
